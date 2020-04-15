@@ -1,6 +1,6 @@
 ﻿namespace Kursach123
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -31,7 +31,7 @@
             this.AddButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.ChangeButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TableDataGridView = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,7 +42,7 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Количество = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.refreshButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TableDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // AddButton
@@ -78,12 +78,12 @@
             this.ChangeButton.UseVisualStyleBackColor = true;
             this.ChangeButton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // dataGridView1
+            // TableDataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TableDataGridView.AllowUserToAddRows = false;
+            this.TableDataGridView.AllowUserToDeleteRows = false;
+            this.TableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TableDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.Column2,
             this.Column3,
@@ -93,10 +93,11 @@
             this.Column7,
             this.Column8,
             this.Количество});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 50);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(869, 174);
-            this.dataGridView1.TabIndex = 3;
+            this.TableDataGridView.Location = new System.Drawing.Point(12, 50);
+            this.TableDataGridView.Name = "TableDataGridView";
+            this.TableDataGridView.ReadOnly = true;
+            this.TableDataGridView.Size = new System.Drawing.Size(869, 174);
+            this.TableDataGridView.TabIndex = 3;
             // 
             // id
             // 
@@ -155,20 +156,20 @@
             this.refreshButton.UseVisualStyleBackColor = true;
             this.refreshButton.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(888, 276);
             this.Controls.Add(this.refreshButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.TableDataGridView);
             this.Controls.Add(this.ChangeButton);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.AddButton);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Управление поставками";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TableDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -178,7 +179,7 @@
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button ChangeButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView TableDataGridView;
         private System.Windows.Forms.Button refreshButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

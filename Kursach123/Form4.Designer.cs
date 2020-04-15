@@ -1,6 +1,6 @@
 ﻿namespace Kursach123
 {
-    partial class Form4
+    partial class chengeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.indexLineTextBox = new System.Windows.Forms.TextBox();
+            this.indexLineLabel = new System.Windows.Forms.Label();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.amoutLabel = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.nameProductLabel = new System.Windows.Forms.Label();
+            this.agentMidNameLabel = new System.Windows.Forms.Label();
+            this.agentFirstNameLabel = new System.Windows.Forms.Label();
+            this.agentLastNameLabel = new System.Windows.Forms.Label();
+            this.indexLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.amoutTextBox = new System.Windows.Forms.TextBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.nameProductTextBox6 = new System.Windows.Forms.TextBox();
+            this.agentMidNameTextBox = new System.Windows.Forms.TextBox();
+            this.agentFirstNameTextBox = new System.Windows.Forms.TextBox();
+            this.agentLastNameTextBox = new System.Windows.Forms.TextBox();
+            this.indexTextBox = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.messageLabel = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(75, 36);
+            this.button1.Location = new System.Drawing.Point(169, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 27);
             this.button1.TabIndex = 0;
@@ -63,187 +63,187 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // indexLineTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(14, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(55, 26);
-            this.textBox1.TabIndex = 1;
+            this.indexLineTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.indexLineTextBox.Location = new System.Drawing.Point(14, 36);
+            this.indexLineTextBox.Name = "indexLineTextBox";
+            this.indexLineTextBox.Size = new System.Drawing.Size(149, 26);
+            this.indexLineTextBox.TabIndex = 1;
             // 
-            // label1
+            // indexLineLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(10, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "id строки для изменения";
+            this.indexLineLabel.AutoSize = true;
+            this.indexLineLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.indexLineLabel.Location = new System.Drawing.Point(10, 13);
+            this.indexLineLabel.Name = "indexLineLabel";
+            this.indexLineLabel.Size = new System.Drawing.Size(239, 20);
+            this.indexLineLabel.TabIndex = 2;
+            this.indexLineLabel.Text = "индекс строки для изменения";
             // 
-            // button2
+            // saveButton
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(361, 174);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 42);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Сохранить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.saveButton.Location = new System.Drawing.Point(361, 174);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(213, 42);
+            this.saveButton.TabIndex = 26;
+            this.saveButton.Text = "Сохранить";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label8
+            // amoutLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(5, 196);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 20);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Количество (л/кг)";
+            this.amoutLabel.AutoSize = true;
+            this.amoutLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.amoutLabel.Location = new System.Drawing.Point(20, 228);
+            this.amoutLabel.Name = "amoutLabel";
+            this.amoutLabel.Size = new System.Drawing.Size(143, 20);
+            this.amoutLabel.TabIndex = 24;
+            this.amoutLabel.Text = "Количество (л/кг)";
             // 
-            // label7
+            // priceLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(40, 165);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 20);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Цена продукта";
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.priceLabel.Location = new System.Drawing.Point(40, 197);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(123, 20);
+            this.priceLabel.TabIndex = 23;
+            this.priceLabel.Text = "Цена продукта";
             // 
-            // label6
+            // nameProductLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(5, 136);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(158, 20);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Название продукта";
+            this.nameProductLabel.AutoSize = true;
+            this.nameProductLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameProductLabel.Location = new System.Drawing.Point(5, 164);
+            this.nameProductLabel.Name = "nameProductLabel";
+            this.nameProductLabel.Size = new System.Drawing.Size(158, 20);
+            this.nameProductLabel.TabIndex = 22;
+            this.nameProductLabel.Text = "Название продукта";
             // 
-            // label5
+            // agentMidNameLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(372, 135);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 20);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Отчество";
+            this.agentMidNameLabel.AutoSize = true;
+            this.agentMidNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.agentMidNameLabel.Location = new System.Drawing.Point(372, 135);
+            this.agentMidNameLabel.Name = "agentMidNameLabel";
+            this.agentMidNameLabel.Size = new System.Drawing.Size(83, 20);
+            this.agentMidNameLabel.TabIndex = 21;
+            this.agentMidNameLabel.Text = "Отчество";
             // 
-            // label4
+            // agentFirstNameLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(413, 98);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 20);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Имя";
+            this.agentFirstNameLabel.AutoSize = true;
+            this.agentFirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.agentFirstNameLabel.Location = new System.Drawing.Point(413, 98);
+            this.agentFirstNameLabel.Name = "agentFirstNameLabel";
+            this.agentFirstNameLabel.Size = new System.Drawing.Size(40, 20);
+            this.agentFirstNameLabel.TabIndex = 20;
+            this.agentFirstNameLabel.Text = "Имя";
             // 
-            // label3
+            // agentLastNameLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(372, 65);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 20);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Фамилия";
+            this.agentLastNameLabel.AutoSize = true;
+            this.agentLastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.agentLastNameLabel.Location = new System.Drawing.Point(372, 65);
+            this.agentLastNameLabel.Name = "agentLastNameLabel";
+            this.agentLastNameLabel.Size = new System.Drawing.Size(81, 20);
+            this.agentLastNameLabel.TabIndex = 19;
+            this.agentLastNameLabel.Text = "Фамилия";
             // 
-            // label2
+            // indexLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 96);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 20);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Индекс компании";
+            this.indexLabel.AutoSize = true;
+            this.indexLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.indexLabel.Location = new System.Drawing.Point(21, 128);
+            this.indexLabel.Name = "indexLabel";
+            this.indexLabel.Size = new System.Drawing.Size(142, 20);
+            this.indexLabel.TabIndex = 25;
+            this.indexLabel.Text = "Индекс компании";
             // 
-            // label9
+            // nameLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(3, 66);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(160, 20);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Название компании";
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameLabel.Location = new System.Drawing.Point(3, 98);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(160, 20);
+            this.nameLabel.TabIndex = 18;
+            this.nameLabel.Text = "Название компании";
             // 
-            // textBox8
+            // amoutTextBox
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.Location = new System.Drawing.Point(169, 196);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(114, 26);
-            this.textBox8.TabIndex = 17;
+            this.amoutTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.amoutTextBox.Location = new System.Drawing.Point(169, 228);
+            this.amoutTextBox.Name = "amoutTextBox";
+            this.amoutTextBox.Size = new System.Drawing.Size(114, 26);
+            this.amoutTextBox.TabIndex = 17;
             // 
-            // textBox7
+            // priceTextBox
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.Location = new System.Drawing.Point(169, 165);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(114, 26);
-            this.textBox7.TabIndex = 16;
+            this.priceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.priceTextBox.Location = new System.Drawing.Point(169, 197);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(114, 26);
+            this.priceTextBox.TabIndex = 16;
             // 
-            // textBox6
+            // nameProductTextBox6
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(169, 129);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(114, 26);
-            this.textBox6.TabIndex = 15;
+            this.nameProductTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameProductTextBox6.Location = new System.Drawing.Point(169, 161);
+            this.nameProductTextBox6.Name = "nameProductTextBox6";
+            this.nameProductTextBox6.Size = new System.Drawing.Size(114, 26);
+            this.nameProductTextBox6.TabIndex = 15;
             // 
-            // textBox5
+            // agentMidNameTextBox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(461, 130);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(128, 26);
-            this.textBox5.TabIndex = 14;
+            this.agentMidNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.agentMidNameTextBox.Location = new System.Drawing.Point(459, 132);
+            this.agentMidNameTextBox.Name = "agentMidNameTextBox";
+            this.agentMidNameTextBox.Size = new System.Drawing.Size(128, 26);
+            this.agentMidNameTextBox.TabIndex = 14;
             // 
-            // textBox4
+            // agentFirstNameTextBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(459, 98);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(130, 26);
-            this.textBox4.TabIndex = 13;
+            this.agentFirstNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.agentFirstNameTextBox.Location = new System.Drawing.Point(459, 98);
+            this.agentFirstNameTextBox.Name = "agentFirstNameTextBox";
+            this.agentFirstNameTextBox.Size = new System.Drawing.Size(130, 26);
+            this.agentFirstNameTextBox.TabIndex = 13;
             // 
-            // textBox3
+            // agentLastNameTextBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(459, 62);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 26);
-            this.textBox3.TabIndex = 12;
+            this.agentLastNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.agentLastNameTextBox.Location = new System.Drawing.Point(459, 62);
+            this.agentLastNameTextBox.Name = "agentLastNameTextBox";
+            this.agentLastNameTextBox.Size = new System.Drawing.Size(130, 26);
+            this.agentLastNameTextBox.TabIndex = 12;
             // 
-            // textBox2
+            // indexTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(169, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(114, 26);
-            this.textBox2.TabIndex = 11;
+            this.indexTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.indexTextBox.Location = new System.Drawing.Point(169, 128);
+            this.indexTextBox.Name = "indexTextBox";
+            this.indexTextBox.Size = new System.Drawing.Size(114, 26);
+            this.indexTextBox.TabIndex = 11;
             // 
-            // textBox9
+            // nameTextBox
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox9.Location = new System.Drawing.Point(169, 66);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(114, 26);
-            this.textBox9.TabIndex = 10;
+            this.nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameTextBox.Location = new System.Drawing.Point(169, 98);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(114, 26);
+            this.nameTextBox.TabIndex = 10;
             // 
-            // label10
+            // messageLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(169, 39);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 20);
-            this.label10.TabIndex = 27;
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.messageLabel.Location = new System.Drawing.Point(12, 68);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(0, 20);
+            this.messageLabel.TabIndex = 27;
             // 
             // label12
             // 
@@ -255,34 +255,34 @@
             this.label12.TabIndex = 31;
             this.label12.Text = "Агент поставки";
             // 
-            // Form4
+            // chengeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(601, 236);
+            this.ClientSize = new System.Drawing.Size(601, 260);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.messageLabel);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.amoutLabel);
+            this.Controls.Add(this.priceLabel);
+            this.Controls.Add(this.nameProductLabel);
+            this.Controls.Add(this.agentMidNameLabel);
+            this.Controls.Add(this.agentFirstNameLabel);
+            this.Controls.Add(this.agentLastNameLabel);
+            this.Controls.Add(this.indexLabel);
+            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.amoutTextBox);
+            this.Controls.Add(this.priceTextBox);
+            this.Controls.Add(this.nameProductTextBox6);
+            this.Controls.Add(this.agentMidNameTextBox);
+            this.Controls.Add(this.agentFirstNameTextBox);
+            this.Controls.Add(this.agentLastNameTextBox);
+            this.Controls.Add(this.indexTextBox);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.indexLineLabel);
+            this.Controls.Add(this.indexLineTextBox);
             this.Controls.Add(this.button1);
-            this.Name = "Form4";
+            this.Name = "chengeForm";
             this.Text = "Изменение";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -292,26 +292,26 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox indexLineTextBox;
+        private System.Windows.Forms.Label indexLineLabel;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Label amoutLabel;
+        private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.Label nameProductLabel;
+        private System.Windows.Forms.Label agentMidNameLabel;
+        private System.Windows.Forms.Label agentFirstNameLabel;
+        private System.Windows.Forms.Label agentLastNameLabel;
+        private System.Windows.Forms.Label indexLabel;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.TextBox amoutTextBox;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.TextBox nameProductTextBox6;
+        private System.Windows.Forms.TextBox agentMidNameTextBox;
+        private System.Windows.Forms.TextBox agentFirstNameTextBox;
+        private System.Windows.Forms.TextBox agentLastNameTextBox;
+        private System.Windows.Forms.TextBox indexTextBox;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.Label messageLabel;
         private System.Windows.Forms.Label label12;
     }
 }

@@ -100,24 +100,27 @@ namespace Kursach123
                 file2[i] = file[i];
             File.WriteAllLines(path, file2);
         }
-        /*
-        private void input()
-        {
-            companyName = Console.ReadLine();
-            adresIndex = Convert.ToInt32(Console.ReadLine());
-            agentLastName = Console.ReadLine();
-            agentFirstName = Console.ReadLine();
-            agentMidName = Console.ReadLine();
-            nameProduct = Console.ReadLine();
-            price = Convert.ToDecimal(Console.ReadLine());
-            amount = Convert.ToInt32(Console.ReadLine());
-        }
-        */
         public int Prov(string path, int id)                         //изменение строки
         {
             string[] file = File.ReadAllLines(path);
             return file.Length;
         }
+        public int sravneniya(string path, int index)
+        {
+            string[] file = File.ReadAllLines(path);
+            string[] file2 = new string[file.Length - 1];
+            int id = 0;
+            for (int i = 0; i < file.Length; i++)
+            {
+                ReadFile(path, i + 1);
+                if (adresIndex == index)
+                {
+                    id = i + 1;
+                }
+            }
+            return id;
+        }
+
         public void deleteLineCompany(string path, int name)          //Удаление по индексу
         {
             string[] file = File.ReadAllLines(path);

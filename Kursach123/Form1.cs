@@ -11,50 +11,50 @@ using System.IO;
 
 namespace Kursach123
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public static string path = "Kurs.txt";
+        public MainForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 Form2 = new Form2();
-            Form2.Show();
+            addForm addForm = new addForm();
+            addForm.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string path = "Kurs.txt";
             string[] file = File.ReadAllLines(path);
-            dataGridView1.Rows.Clear();
+            TableDataGridView.Rows.Clear();
             for (int i = 0; i < file.Length; i++)
             {
                 string[] buffer = file[i].Split(';');
-                dataGridView1.Rows.Add();
-                dataGridView1.Rows[i].Cells[0].Value = i+1;
-                dataGridView1.Rows[i].Cells[1].Value = buffer[0];
-                dataGridView1.Rows[i].Cells[2].Value = buffer[1];
-                dataGridView1.Rows[i].Cells[3].Value = buffer[2];
-                dataGridView1.Rows[i].Cells[4].Value = buffer[3];
-                dataGridView1.Rows[i].Cells[5].Value = buffer[4];
-                dataGridView1.Rows[i].Cells[6].Value = buffer[5];
-                dataGridView1.Rows[i].Cells[7].Value = buffer[6];
-                dataGridView1.Rows[i].Cells[8].Value = buffer[7];
+                TableDataGridView.Rows.Add();
+                TableDataGridView.Rows[i].Cells[0].Value = i+1;
+                TableDataGridView.Rows[i].Cells[1].Value = buffer[0];
+                TableDataGridView.Rows[i].Cells[2].Value = buffer[1];
+                TableDataGridView.Rows[i].Cells[3].Value = buffer[2];
+                TableDataGridView.Rows[i].Cells[4].Value = buffer[3];
+                TableDataGridView.Rows[i].Cells[5].Value = buffer[4];
+                TableDataGridView.Rows[i].Cells[6].Value = buffer[5];
+                TableDataGridView.Rows[i].Cells[7].Value = buffer[6];
+                TableDataGridView.Rows[i].Cells[8].Value = buffer[7];
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 Form3 = new Form3();
-            Form3.Show();
+            deleteForm deleteForm = new deleteForm();
+            deleteForm.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form4 Form4 = new Form4();
-            Form4.Show();
+            chengeForm chengeForm = new chengeForm();
+            chengeForm.Show();
         }
     }
 }

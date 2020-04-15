@@ -9,49 +9,50 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+
+
 namespace Kursach123
 {
-    public partial class Form4 : Form
+    public partial class chengeForm : Form
     {
-        public Form4()
+        public chengeForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string path = "Kurs.txt";
-
             Suppliers sup = new Suppliers();
-            if (textBox1.Text == "")
-                label10.Text = "Введите id";
+            if (indexLineTextBox.Text == "")
+                messageLabel.Text = "Введите индекс";
             else
             {
                 try
                 {
-                    int id = Convert.ToInt32(textBox1.Text);
+                    int index = Convert.ToInt32(indexLineTextBox.Text);
+                    int id = sup.sravneniya(MainForm.path, index);
 
-                    if (id > sup.Prov(path, id) || (id < 1))
+                    if (id == 0)
                     {
-                        label10.Text = "Нет такого id";
+                        messageLabel.Text = "Нет такого индекса";
                     }
                     else
                     {
-                        label10.Text = "";
-                        label10.Text = "";
-                        sup.ReadFile(path, id);
-                        textBox9.Text = sup.companyName;
-                        textBox2.Text = Convert.ToString(sup.adresIndex);
-                        textBox3.Text = sup.agentLastName;
-                        textBox4.Text = sup.agentFirstName;
-                        textBox5.Text = sup.agentMidName;
-                        textBox6.Text = sup.nameProduct;
-                        textBox7.Text = Convert.ToString(sup.price);
-                        textBox8.Text = Convert.ToString(sup.amount);
+                        messageLabel.Text = "";
+                        messageLabel.Text = "";
+                        sup.ReadFile(MainForm.path, id);
+                        nameTextBox.Text = sup.companyName;
+                        indexTextBox.Text = Convert.ToString(sup.adresIndex);
+                        agentLastNameTextBox.Text = sup.agentLastName;
+                        agentFirstNameTextBox.Text = sup.agentFirstName;
+                        agentMidNameTextBox.Text = sup.agentMidName;
+                        nameProductTextBox6.Text = sup.nameProduct;
+                        priceTextBox.Text = Convert.ToString(sup.price);
+                        amoutTextBox.Text = Convert.ToString(sup.amount);
                     }
                 }catch
                 {
-                    label10.Text = "Вветите корректный id";
+                    messageLabel.Text = "Вветите корректный индекс";
                 }
             }
         }
@@ -60,54 +61,54 @@ namespace Kursach123
         private void button2_Click(object sender, EventArgs e)
         {
 
-            string path = "Kurs.txt";
-            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == ""
-               || textBox5.Text == "" || textBox6.Text == "" || textBox7.Text == "" || textBox8.Text == "")
+            if (indexLineTextBox.Text == "" || indexTextBox.Text == "" || agentLastNameTextBox.Text == "" || agentFirstNameTextBox.Text == ""
+               || agentMidNameTextBox.Text == "" || nameProductTextBox6.Text == "" || priceTextBox.Text == "" || amoutTextBox.Text == "")
                 MessageBox.Show("Заполните все поля");
             else
             {
                 try
                 {
-                    int id = Convert.ToInt32(textBox1.Text);
-                    int name = Convert.ToInt32(textBox2.Text);
-                    Suppliers sup = new Suppliers(textBox9.Text, Convert.ToInt32(textBox2.Text), textBox3.Text,
-                        textBox4.Text, textBox5.Text, textBox6.Text, Convert.ToDecimal(textBox7.Text), Convert.ToInt32(textBox8.Text));
+                    int index = Convert.ToInt32(indexLineTextBox.Text);
+                    int name = Convert.ToInt32(indexTextBox.Text);
+                    Suppliers sup = new Suppliers(nameTextBox.Text, Convert.ToInt32(indexTextBox.Text), agentLastNameTextBox.Text,
+                        agentFirstNameTextBox.Text, agentMidNameTextBox.Text, nameProductTextBox6.Text, Convert.ToDecimal(priceTextBox.Text), Convert.ToInt32(amoutTextBox.Text));
+                    int id = sup.sravneniya(MainForm.path, index);
 
                     string a = sup.companyName;
-                    if (sup.srav(path, name))
+                    if (sup.srav(MainForm.path, name))
                     {
-                        sup.ReadFile(path, id);
-                        if (sup.adresIndex != Convert.ToInt32(textBox2.Text))
+                        sup.ReadFile(MainForm.path, id);
+                        if (sup.adresIndex != Convert.ToInt32(indexTextBox.Text))
                         {
                             MessageBox.Show("этот индекс уже используется");
                         }
                         else
                         {                         
-                            sup.companyName = textBox9.Text;
-                            sup.adresIndex = Convert.ToInt32(textBox2.Text);
-                            sup.agentLastName = textBox3.Text;
-                            sup.agentFirstName = textBox4.Text;
-                            sup.agentMidName = textBox5.Text;
-                            sup.nameProduct = textBox6.Text;
-                            sup.price = Convert.ToDecimal(textBox7.Text);
-                            sup.amount = Convert.ToInt32(textBox8.Text);
+                            sup.companyName = nameTextBox.Text;
+                            sup.adresIndex = Convert.ToInt32(indexTextBox.Text);
+                            sup.agentLastName = agentLastNameTextBox.Text;
+                            sup.agentFirstName = agentFirstNameTextBox.Text;
+                            sup.agentMidName = agentMidNameTextBox.Text;
+                            sup.nameProduct = nameProductTextBox6.Text;
+                            sup.price = Convert.ToDecimal(priceTextBox.Text);
+                            sup.amount = Convert.ToInt32(amoutTextBox.Text);
 
-                            sup.change(path, id);
+                            sup.change(MainForm.path, id);
                             this.Close();
                         }
                     }
                     else
                     {
-                        sup.companyName = textBox9.Text;
-                        sup.adresIndex = Convert.ToInt32(textBox2.Text);
-                        sup.agentLastName = textBox3.Text;
-                        sup.agentFirstName = textBox4.Text;
-                        sup.agentMidName = textBox5.Text;
-                        sup.nameProduct = textBox6.Text;
-                        sup.price = Convert.ToDecimal(textBox7.Text);
-                        sup.amount = Convert.ToInt32(textBox8.Text);
+                        sup.companyName = nameTextBox.Text;
+                        sup.adresIndex = Convert.ToInt32(indexTextBox.Text);
+                        sup.agentLastName = agentLastNameTextBox.Text;
+                        sup.agentFirstName = agentFirstNameTextBox.Text;
+                        sup.agentMidName = agentMidNameTextBox.Text;
+                        sup.nameProduct = nameProductTextBox6.Text;
+                        sup.price = Convert.ToDecimal(priceTextBox.Text);
+                        sup.amount = Convert.ToInt32(amoutTextBox.Text);
 
-                        sup.change(path, id);
+                        sup.change(MainForm.path, id);
                         this.Close();
                     }
                 }

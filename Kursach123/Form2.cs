@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kursach123
 {
-    public partial class Form2 : Form
+    public partial class addForm : Form
     {
-        public Form2()
+        public addForm()
         {
             InitializeComponent();
         }
@@ -21,28 +21,27 @@ namespace Kursach123
         {
             try
             {
-                if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == ""
-                    || textBox5.Text == "" || textBox6.Text == "" || textBox7.Text == "" || textBox8.Text == "")
+                if (nameTextBox.Text == "" || indexTextBox.Text == "" || agentLastNameTextBox.Text == "" || agentFirstNameTextBox.Text == ""
+                    || agentMidNameTextBox.Text == "" || nameProductTextBox.Text == "" || priceTextBox.Text == "" || amoutTextBox.Text == "")
                     MessageBox.Show("Заполните все поля");
                 else
                 {
-                    int name = Convert.ToInt32(textBox2.Text);
-                    string path = "Kurs.txt";
+                    int name = Convert.ToInt32(indexTextBox.Text);
                     Suppliers Sup = new Suppliers();
-                    if (Sup.srav(path, name))
-                        label9.Text = "этот индекс уже используется";
+                    if (Sup.srav(MainForm.path, name))
+                        messageLabel.Text = "этот индекс уже используется";
                     else
                     {
-                        Sup.companyName = textBox1.Text;
-                        Sup.adresIndex = Convert.ToInt32(textBox2.Text);
-                        Sup.agentLastName = textBox3.Text;
-                        Sup.agentFirstName = textBox4.Text;
-                        Sup.agentMidName = textBox5.Text;
-                        Sup.nameProduct = textBox6.Text;
-                        Sup.price = Convert.ToDecimal(textBox7.Text);
-                        Sup.amount = Convert.ToInt32(textBox8.Text);
+                        Sup.companyName = nameTextBox.Text;
+                        Sup.adresIndex = Convert.ToInt32(indexTextBox.Text);
+                        Sup.agentLastName = agentLastNameTextBox.Text;
+                        Sup.agentFirstName = agentFirstNameTextBox.Text;
+                        Sup.agentMidName = agentMidNameTextBox.Text;
+                        Sup.nameProduct = nameProductTextBox.Text;
+                        Sup.price = Convert.ToDecimal(priceTextBox.Text);
+                        Sup.amount = Convert.ToInt32(amoutTextBox.Text);
 
-                        Sup.WriteFile(path);
+                        Sup.WriteFile(MainForm.path);
                         this.Close();
                     }
                 }

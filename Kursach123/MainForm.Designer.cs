@@ -54,7 +54,7 @@
             this.AddButton.TabIndex = 0;
             this.AddButton.Text = "Добавить продукт ";
             this.AddButton.UseVisualStyleBackColor = true;
-            this.AddButton.Click += new System.EventHandler(this.button1_Click);
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // DeleteButton
             // 
@@ -65,7 +65,7 @@
             this.DeleteButton.TabIndex = 1;
             this.DeleteButton.Text = "Удаление продукта";
             this.DeleteButton.UseVisualStyleBackColor = true;
-            this.DeleteButton.Click += new System.EventHandler(this.button2_Click);
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // ChangeButton
             // 
@@ -76,7 +76,7 @@
             this.ChangeButton.TabIndex = 2;
             this.ChangeButton.Text = "Изменение продукта";
             this.ChangeButton.UseVisualStyleBackColor = true;
-            this.ChangeButton.Click += new System.EventHandler(this.button3_Click);
+            this.ChangeButton.Click += new System.EventHandler(this.ChangeButton_Click);
             // 
             // TableDataGridView
             // 
@@ -103,47 +103,56 @@
             // 
             this.id.HeaderText = "id";
             this.id.Name = "id";
+            this.id.ReadOnly = true;
             this.id.Width = 25;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Компания";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Индекс";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Фамилия";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Имя";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Отчество";
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Продукт";
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Цена";
             this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // Количество
             // 
             this.Количество.HeaderText = "Количество";
             this.Количество.Name = "Количество";
+            this.Количество.ReadOnly = true;
             // 
             // refreshButton
             // 
@@ -154,7 +163,7 @@
             this.refreshButton.TabIndex = 4;
             this.refreshButton.Text = "Обновить";
             this.refreshButton.UseVisualStyleBackColor = true;
-            this.refreshButton.Click += new System.EventHandler(this.button4_Click);
+            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 
             // MainForm
             // 

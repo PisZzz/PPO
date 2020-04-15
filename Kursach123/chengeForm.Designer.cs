@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.vvodButton = new System.Windows.Forms.Button();
             this.indexLineTextBox = new System.Windows.Forms.TextBox();
             this.indexLineLabel = new System.Windows.Forms.Label();
             this.saveButton = new System.Windows.Forms.Button();
@@ -42,26 +42,26 @@
             this.nameLabel = new System.Windows.Forms.Label();
             this.amoutTextBox = new System.Windows.Forms.TextBox();
             this.priceTextBox = new System.Windows.Forms.TextBox();
-            this.nameProductTextBox6 = new System.Windows.Forms.TextBox();
+            this.nameProductTextBox = new System.Windows.Forms.TextBox();
             this.agentMidNameTextBox = new System.Windows.Forms.TextBox();
             this.agentFirstNameTextBox = new System.Windows.Forms.TextBox();
             this.agentLastNameTextBox = new System.Windows.Forms.TextBox();
             this.indexTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.messageLabel = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.agentLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // vvodButton
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(169, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 27);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "ввод";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.vvodButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.vvodButton.Location = new System.Drawing.Point(169, 36);
+            this.vvodButton.Name = "vvodButton";
+            this.vvodButton.Size = new System.Drawing.Size(88, 27);
+            this.vvodButton.TabIndex = 0;
+            this.vvodButton.Text = "ввод";
+            this.vvodButton.UseVisualStyleBackColor = true;
+            this.vvodButton.Click += new System.EventHandler(this.vvodButton_Click);
             // 
             // indexLineTextBox
             // 
@@ -90,7 +90,7 @@
             this.saveButton.TabIndex = 26;
             this.saveButton.Text = "Сохранить";
             this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.button2_Click);
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // amoutLabel
             // 
@@ -188,13 +188,13 @@
             this.priceTextBox.Size = new System.Drawing.Size(114, 26);
             this.priceTextBox.TabIndex = 16;
             // 
-            // nameProductTextBox6
+            // nameProductTextBox
             // 
-            this.nameProductTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nameProductTextBox6.Location = new System.Drawing.Point(169, 161);
-            this.nameProductTextBox6.Name = "nameProductTextBox6";
-            this.nameProductTextBox6.Size = new System.Drawing.Size(114, 26);
-            this.nameProductTextBox6.TabIndex = 15;
+            this.nameProductTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameProductTextBox.Location = new System.Drawing.Point(169, 161);
+            this.nameProductTextBox.Name = "nameProductTextBox";
+            this.nameProductTextBox.Size = new System.Drawing.Size(114, 26);
+            this.nameProductTextBox.TabIndex = 15;
             // 
             // agentMidNameTextBox
             // 
@@ -245,22 +245,22 @@
             this.messageLabel.Size = new System.Drawing.Size(0, 20);
             this.messageLabel.TabIndex = 27;
             // 
-            // label12
+            // agentLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(413, 36);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 20);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "Агент поставки";
+            this.agentLabel.AutoSize = true;
+            this.agentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.agentLabel.Location = new System.Drawing.Point(413, 36);
+            this.agentLabel.Name = "agentLabel";
+            this.agentLabel.Size = new System.Drawing.Size(128, 20);
+            this.agentLabel.TabIndex = 31;
+            this.agentLabel.Text = "Агент поставки";
             // 
             // chengeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 260);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.agentLabel);
             this.Controls.Add(this.messageLabel);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.amoutLabel);
@@ -273,7 +273,7 @@
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.amoutTextBox);
             this.Controls.Add(this.priceTextBox);
-            this.Controls.Add(this.nameProductTextBox6);
+            this.Controls.Add(this.nameProductTextBox);
             this.Controls.Add(this.agentMidNameTextBox);
             this.Controls.Add(this.agentFirstNameTextBox);
             this.Controls.Add(this.agentLastNameTextBox);
@@ -281,7 +281,7 @@
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.indexLineLabel);
             this.Controls.Add(this.indexLineTextBox);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.vvodButton);
             this.Name = "chengeForm";
             this.Text = "Изменение";
             this.ResumeLayout(false);
@@ -291,7 +291,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button vvodButton;
         private System.Windows.Forms.TextBox indexLineTextBox;
         private System.Windows.Forms.Label indexLineLabel;
         private System.Windows.Forms.Button saveButton;
@@ -305,13 +305,13 @@
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.TextBox amoutTextBox;
         private System.Windows.Forms.TextBox priceTextBox;
-        private System.Windows.Forms.TextBox nameProductTextBox6;
+        private System.Windows.Forms.TextBox nameProductTextBox;
         private System.Windows.Forms.TextBox agentMidNameTextBox;
         private System.Windows.Forms.TextBox agentFirstNameTextBox;
         private System.Windows.Forms.TextBox agentLastNameTextBox;
         private System.Windows.Forms.TextBox indexTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label messageLabel;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label agentLabel;
     }
 }

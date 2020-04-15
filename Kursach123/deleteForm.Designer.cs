@@ -52,7 +52,7 @@
             this.deleteButton.TabIndex = 10;
             this.deleteButton.Text = "Удалить строку";
             this.deleteButton.UseVisualStyleBackColor = true;
-            this.deleteButton.Click += new System.EventHandler(this.button2_Click);
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // indexTextBox
             // 

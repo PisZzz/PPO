@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Kursach123
 {
@@ -19,13 +12,13 @@ namespace Kursach123
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AddButton_Click(object sender, EventArgs e)
         {
             addForm addForm = new addForm();
             addForm.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void refreshButton_Click(object sender, EventArgs e)
         {
             string[] file = File.ReadAllLines(path);
             TableDataGridView.Rows.Clear();
@@ -33,7 +26,7 @@ namespace Kursach123
             {
                 string[] buffer = file[i].Split(';');
                 TableDataGridView.Rows.Add();
-                TableDataGridView.Rows[i].Cells[0].Value = i+1;
+                TableDataGridView.Rows[i].Cells[0].Value = i + 1;
                 TableDataGridView.Rows[i].Cells[1].Value = buffer[0];
                 TableDataGridView.Rows[i].Cells[2].Value = buffer[1];
                 TableDataGridView.Rows[i].Cells[3].Value = buffer[2];
@@ -45,16 +38,17 @@ namespace Kursach123
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void DeleteButton_Click(object sender, EventArgs e)
         {
             deleteForm deleteForm = new deleteForm();
             deleteForm.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void ChangeButton_Click(object sender, EventArgs e)
         {
             chengeForm chengeForm = new chengeForm();
             chengeForm.Show();
+
         }
     }
 }

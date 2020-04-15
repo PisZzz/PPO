@@ -61,7 +61,7 @@ namespace Kursach123
         private void saveButton_Click(object sender, EventArgs e)
         {
 
-            if (indexLineTextBox.Text == "" || indexTextBox.Text == "" || agentLastNameTextBox.Text == "" || agentFirstNameTextBox.Text == ""
+            if (nameTextBox.Text == "" || indexLineTextBox.Text == "" || indexTextBox.Text == "" || agentLastNameTextBox.Text == "" || agentFirstNameTextBox.Text == ""
                || agentMidNameTextBox.Text == "" || nameProductTextBox.Text == "" || priceTextBox.Text == "" || amoutTextBox.Text == "")
                 MessageBox.Show("Заполните все поля");
             else

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Kursach123.addForm">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIADgAAAAAEACoIAhCCAAIAAACBEAAQCAACAE=</HashCode>
+      <FileName>addForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursach123.chengeForm">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAIADoAAAAAEACgIEhCCAAIAgACBEAAQCAACAE=</HashCode>
+      <FileName>chengeForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursach123.deleteForm">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAAEAAAACAAAACQAAAAAAABAAAAAAAAAE=</HashCode>
+      <FileName>deleteForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursach123.MainForm">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQABACAAAAAAAESCAAAGAAGYR6AAAAAAAIBAAgA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kursach123.Suppliers">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQBAEQAAAAgQAAIAAAAAAAAACAAgFgAAAAACAAAAMA=</HashCode>
+      <FileName>Suppliers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
